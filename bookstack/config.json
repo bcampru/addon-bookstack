@@ -6,15 +6,26 @@
   "url": "https://github.com/hassio-addons/addon-bookstack",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "init": false,
-  "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
-  "services": ["mysql:want"],
-  "map": ["ssl"],
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"
+  ],
+  "services": [
+    "mysql:want"
+  ],
+  "map": [
+    "ssl"
+  ],
   "ports": {
     "80/tcp": 2665
   },
   "ports_description": {
     "80/tcp": "Web interface"
   },
+  "ingress": true,
   "options": {
     "envvars": [],
     "ssl": false,
